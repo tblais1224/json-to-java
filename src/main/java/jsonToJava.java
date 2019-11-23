@@ -1,3 +1,4 @@
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,9 +11,8 @@ public class jsonToJava {
         Connection connection = null;
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/business", "root", "root" );
         Statement st = connection.createStatement();
-        ResultSet rs = st.executeQuery("select * from customerinfo where PurchasedDate=CURDATE() and Location " +
-                "='Asia';");
-        rs.next();
+        ResultSet rs = st.executeQuery("select * from customerinfo where Location = 'Asia' and PurchasedDate = " +
+                "CURDATE();");
         while (rs.next()) {
             CustomerDetails customer =  new CustomerDetails();
             customer.setCourseName(rs.getString(1));

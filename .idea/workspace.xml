@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4735cf51-9980-4781-b504-0b96e6a7ce8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonToJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CustomerDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomerDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/jsonToJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jsonToJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonToJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CustomerDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomerDetails.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +47,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tomal\Documents\javaCode\JsonJava\src\main\java" />
       <recent name="C:\Users\tomal\Documents\javaCode\JsonJava\src\main\resources" />
@@ -61,8 +71,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="java" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jsonToJava.java" />
+    <configuration name="jsonToJava" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jsonToJava" />
       <module name="JsonJava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main" />
       <method v="2">
@@ -118,5 +128,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jsonToJava.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jsonToJava.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

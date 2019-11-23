@@ -1,4 +1,3 @@
-
 public class CustomerDetails{
     private String courseName;
     private String purchaseDate;
