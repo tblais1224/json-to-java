@@ -3,8 +3,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import org.apache.commons.text.StringEscapeUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,6 +23,7 @@ public class jsonToJava {
         Connection connection = null;
 
         ArrayList<CustomerDetails> arrayCustomers = new ArrayList<CustomerDetails>();
+        JSONArray js = new JSONArray();
 
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/business", "root", "root");
 
@@ -46,9 +51,22 @@ public class jsonToJava {
             js.add(jsonString);
         }
 
-        JsonObject jo = new JsonObject();
-        jo.put("data","");
-        JsonArray js = new JsonArray();
+        JSONObject jo = new JSONObject();
+        jo.put("data", js);
+
+        System.out.println(jo.toJSONString());
+        // remove the unneeded \
+        String unescapedString = StringEscapeUtils.unescapeJava(jo.toJSONString());
+        System.out.println(unescapedString);
+        // remove the quotes at begginning and end of objects
+        String string1 = unescapedString.replace("\"{", "{");
+        String formattedString = string1.replace("}\"", "}");
+
+        System.out.println(formattedString);
+
+        try (FileWriter file = new FileWriter("C:\\Users\\tomal\\OneDrive\\Documents\\javaCode\\json-to-java\\SingleJson.json")) {
+            file.write(formattedString);
+        }
 
         connection.close();
     }
