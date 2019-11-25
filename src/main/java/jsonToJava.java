@@ -25,7 +25,8 @@ public class jsonToJava {
             customer.setLocation(rs.getString(4));
         }
         ObjectMapper o = new ObjectMapper();
-        o.writeValue(new File("C:\\Users\\tomal\\OneDrive\\Documents\\javaCode\\JsonJava\\customerInfo.json"), customer);
+        // o.writeValue(new File("C:\\Users\\tomal\\Documents\\javaCode\\JsonJava\\customerInfo.json"), customer);
+        o.writeValue(new File("C:\\Users\\tomal\\OneDrive\\Documents\\javaCode\\json-to-java\\customerInfo.json"), customer);
 
         connection.close();
     }
